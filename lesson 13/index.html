@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 13: Array</title>
+</head>
+<body>
+<h1>Lesson 13: Array</h1>
+<script>
+  // Khai báo mảng: Cách 1
+  // let cars = ['Volvo','BMW','Bentley','VinFast','MayBach','McLaren','Ferrari'];
+  const cars = new Array('Volvo','BMW','Bentley','VinFast','MayBach',);
+  const numbers = [10];
+  // const numbers = new Array(10); // Tạo ra mảng các số nguyen có 1 phần tử
+  console.log(numbers.length);
+  numbers[0] = 99;
+  numbers[1] = 100;
+  document.write("<ul>");
+  // for (let i = 0; i < cars.length; i++) {
+  //   document.write("<li>" + cars[i] + "</li>");
+  // }
+  // const car3 = car[4];
+  // cars.push("Mazda");
+  // cars.push("Honda");
+  // cars[cars.length] = 'Huyndai';
+  // cars.sort(function (a, b) {
+  //   return b - a;
+  // });
+  // cars.pop();
+  // const deleteItem = cars.pop();
+  // cars.pop();
+  // cars.pop();
+
+  cars.splice(4, 0, 'Ford');
+  // console.log(cars.splice(2,4));
+  // cars = cars.slice(2,4);
+  for (const index in cars) {
+    document.write("<li>" + cars[index] + "</li>");
+  }
+  document.write("</ul>");
+  document.write(cars.reverse().join(""));
+  document.write(cars.toString());
+  document.write("<br>Phần tử bị xóa là: " + deleteItem);
+</script>
+</body>
+</html>
